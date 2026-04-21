@@ -21,11 +21,11 @@ int sel_sort(int a[], int n){
         printf("%d\t", a[i]);
     printf("\n");
     
-    double t = (start-end)/(double) CLOCKS_PER_SEC;
-    printf("Time Complexity: %lf", t);
+    double t = (end - start)/(double) CLOCKS_PER_SEC;
+    printf("Time taken to execute: %lf", t);
 }
 
-int main(){
+void main(){
     int i, a[100], n;
     printf("Enter the value of n: ");
     scanf("%d", &n);
