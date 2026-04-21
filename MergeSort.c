@@ -4,7 +4,7 @@
 
 void merge(int arr[], int low, int mid, int high){
     int i=low, j=mid+1, k=low;
-    int b[high+1];
+    int b[100];
     while(i<=mid && j<=high){
         if(arr[i]<arr[j])
             b[k++] = arr[i++];
@@ -30,12 +30,10 @@ void mergesort(int arr[], int low, int high){
 }
 
 int main(){
-    int i, n;
+    int i, n, arr[100];
     printf("Enter the value of n: ");
     scanf("%d", &n);
-
-    int arr[n];
-
+    
     for(i=0;i<n;i++){
         arr[i] = rand()%(n*2);
         printf("%d\t", arr[i]);
